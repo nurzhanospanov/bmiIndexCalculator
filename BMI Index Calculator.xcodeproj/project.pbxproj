@@ -12,6 +12,7 @@
 		74FE414D1D2D6D4E00DDE54D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FE414B1D2D6D4E00DDE54D /* Main.storyboard */; };
 		74FE414F1D2D6D4E00DDE54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FE414E1D2D6D4E00DDE54D /* Assets.xcassets */; };
 		74FE41521D2D6D4E00DDE54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FE41501D2D6D4E00DDE54D /* LaunchScreen.storyboard */; };
+		74FE415B1D2DAD1600DDE54D /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FE415A1D2DAD1600DDE54D /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		74FE414E1D2D6D4E00DDE54D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74FE41511D2D6D4E00DDE54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74FE41531D2D6D4E00DDE54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74FE415A1D2DAD1600DDE54D /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +60,19 @@
 				74FE41491D2D6D4E00DDE54D /* ViewController.swift */,
 				74FE414B1D2D6D4E00DDE54D /* Main.storyboard */,
 				74FE414E1D2D6D4E00DDE54D /* Assets.xcassets */,
+				74FE41591D2DACFB00DDE54D /* images */,
 				74FE41501D2D6D4E00DDE54D /* LaunchScreen.storyboard */,
 				74FE41531D2D6D4E00DDE54D /* Info.plist */,
 			);
 			path = "BMI Index Calculator";
+			sourceTree = "<group>";
+		};
+		74FE41591D2DACFB00DDE54D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				74FE415A1D2DAD1600DDE54D /* image.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 				74FE41521D2D6D4E00DDE54D /* LaunchScreen.storyboard in Resources */,
 				74FE414F1D2D6D4E00DDE54D /* Assets.xcassets in Resources */,
 				74FE414D1D2D6D4E00DDE54D /* Main.storyboard in Resources */,
+				74FE415B1D2DAD1600DDE54D /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
