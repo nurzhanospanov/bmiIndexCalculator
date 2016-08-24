@@ -107,7 +107,7 @@
 				TargetAttributes = {
 					74FE41431D2D6D4E00DDE54D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 985ZFPSWV3;
+						DevelopmentTeam = 2CTMX86W25;
 					};
 				};
 			};
@@ -265,6 +265,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BMI Index Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.nurzhan.BMI-Index-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,6 +280,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BMI Index Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.nurzhan.BMI-Index-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
