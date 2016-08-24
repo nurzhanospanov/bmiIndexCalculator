@@ -10,20 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var weightField: UITextField!
+    
+    @IBOutlet weak var weightTextField: UITextField!
+    
+    
+    @IBOutlet weak var heightTextField: UITextField!
+    
+    
+    @IBOutlet weak var bmiIndexLabel: UILabel!
+    
+    
+    @IBOutlet weak var categoryLabel: UILabel!
     
     
     
-    @IBOutlet weak var bmiIndexField: UITextView!
-    
-    @IBOutlet weak var categoryField: UITextView!
-   
-    @IBOutlet weak var heightField: UITextField!
-    
-    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.bmiIndexLabel.text = ""
+        self.categoryLabel.text = ""
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -32,34 +39,51 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //@IBAction func calculateButtonPressed(sender: AnyObject) {
+    
+    
+    @IBOutlet weak var calculateButton: UIButton!
+    
+    
     @IBAction func calculateButtonPressed(sender: AnyObject) {
+    
+        guard let weightFieldEntered = Double(weightTextField.text!) else {
         
-        guard let weightFieldEntered = Double(weightField.text!) else {
-        
-            if weightField.text == "" {
+            if weightTextField.text == "" {
                 
-                    let alert = UIAlertController(title: "Type in error", message: "Please type in your data.", preferredStyle: .Alert)
-                    
+                    // no user input alert
+                    let alert = UIAlertController(title: "Blank fields", message: "Please type in your data.", preferredStyle: .Alert)
+                
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
+
+                
                     presentViewController(alert, animated: true, completion:nil)
             }
-                bmiIndexField.text = ""
-                return
+                bmiIndexLabel.text = ""
+            
+            return
         }
         
         
-        guard let heightFieldEntered = Double(heightField.text!) else {
+        guard let heightFieldEntered = Double(heightTextField.text!) else {
             
-            if heightField.text == "" {
+            if heightTextField.text == "" {
             
-            let alert = UIAlertController(title: "Type in error", message: "Please type in your data.", preferredStyle: .Alert)
+                
+                // no user input alert
+
+                let alert = UIAlertController(title: "Blank fields", message: "Please type in your data.", preferredStyle: .Alert)
+                
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
             
-            presentViewController(alert, animated: true, completion:nil)
+                presentViewController(alert, animated: true, completion:nil)
+            
             }
-
             
-            weightField.text = ""
+                weightTextField.text = ""
 
-            bmiIndexField.text = ""
+                bmiIndexLabel.text = ""
+            
             return
         }
         
@@ -69,35 +93,33 @@ class ViewController: UIViewController {
         let bmiIndexResult = weightFieldEntered / heightPreparedForCalculation
         
         
-        bmiIndexField.text = String(format: "%.2f", bmiIndexResult)
+        bmiIndexLabel.text = String(format: "%.2f", bmiIndexResult)
+
     
         if bmiIndexResult < 15 {
             
-            categoryField.text = "Very severely underweight" }
-                else if bmiIndexResult <= 16  {
-                    categoryField.text = "Severly Underweight"
-            }
+            categoryLabel.text = "Very severely underweight" }
+            
                 else if bmiIndexResult <= 18.5  {
-                    categoryField.text = "Underweight"
+                    categoryLabel.text = "Underweight"
+                    self.bmiIndexLabel.textColor = UIColor.init(red: 139.0/255, green: 228.0/255, blue: 246.0/255, alpha: 1.0)
             }
                 else if bmiIndexResult <= 25  {
-                    categoryField.text = "Normal healthy weight"
+                    categoryLabel.text = "Healthy weight"
+                    self.bmiIndexLabel.textColor = UIColor.init(red: 167.0/255, green: 213.0/255, blue: 138.0/255, alpha: 1.0)
+
             }
                 else if bmiIndexResult <= 30  {
-                    categoryField.text = "Overweight"
+                    categoryLabel.text = "Overweight"
+                    self.bmiIndexLabel.textColor = UIColor.init(red: 255.0/255, green: 220.0/255, blue: 99.0/255, alpha: 1.0)
+
             }
-                else if bmiIndexResult <= 35  {
-                    categoryField.text = "Moderately obese"
-            }
-                else if bmiIndexResult <= 40  {
-                    categoryField.text = "Severely obese"
-            }
-                else if bmiIndexResult > 40  {
-                    categoryField.text = "Very severely obese"
+                else if bmiIndexResult > 30  {
+                    categoryLabel.text = "Obese"
+                    self.bmiIndexLabel.textColor = UIColor.init(red: 251.0/255, green: 114.0/255, blue: 93.0/255, alpha: 1.0)
+
         }
         
-            imageView.image = UIImage(named: ("image.png"))
-            
         }
         
     }

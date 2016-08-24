@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74DB5F6C1D6D2E86004ABCFE /* Stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 74DB5F6B1D6D2E86004ABCFE /* Stroke.png */; };
 		74FE41481D2D6D4E00DDE54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FE41471D2D6D4E00DDE54D /* AppDelegate.swift */; };
 		74FE414A1D2D6D4E00DDE54D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FE41491D2D6D4E00DDE54D /* ViewController.swift */; };
 		74FE414D1D2D6D4E00DDE54D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FE414B1D2D6D4E00DDE54D /* Main.storyboard */; };
 		74FE414F1D2D6D4E00DDE54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FE414E1D2D6D4E00DDE54D /* Assets.xcassets */; };
 		74FE41521D2D6D4E00DDE54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FE41501D2D6D4E00DDE54D /* LaunchScreen.storyboard */; };
-		74FE415B1D2DAD1600DDE54D /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FE415A1D2DAD1600DDE54D /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74DB5F6B1D6D2E86004ABCFE /* Stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stroke.png; sourceTree = "<group>"; };
 		74FE41441D2D6D4E00DDE54D /* BMI Index Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Index Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FE41471D2D6D4E00DDE54D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74FE41491D2D6D4E00DDE54D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		74FE414E1D2D6D4E00DDE54D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74FE41511D2D6D4E00DDE54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74FE41531D2D6D4E00DDE54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74FE415A1D2DAD1600DDE54D /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		74FE41591D2DACFB00DDE54D /* images */ = {
 			isa = PBXGroup;
 			children = (
-				74FE415A1D2DAD1600DDE54D /* image.png */,
+				74DB5F6B1D6D2E86004ABCFE /* Stroke.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -107,6 +107,7 @@
 				TargetAttributes = {
 					74FE41431D2D6D4E00DDE54D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 985ZFPSWV3;
 					};
 				};
 			};
@@ -134,9 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74FE41521D2D6D4E00DDE54D /* LaunchScreen.storyboard in Resources */,
+				74DB5F6C1D6D2E86004ABCFE /* Stroke.png in Resources */,
 				74FE414F1D2D6D4E00DDE54D /* Assets.xcassets in Resources */,
 				74FE414D1D2D6D4E00DDE54D /* Main.storyboard in Resources */,
-				74FE415B1D2DAD1600DDE54D /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +262,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BMI Index Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.nurzhan.BMI-Index-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -272,10 +276,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "BMI Index Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.nurzhan.BMI-Index-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -298,6 +305,7 @@
 				74FE41581D2D6D4E00DDE54D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
