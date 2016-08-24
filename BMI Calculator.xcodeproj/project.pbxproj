@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		74DB5F6B1D6D2E86004ABCFE /* Stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stroke.png; sourceTree = "<group>"; };
-		74FE41441D2D6D4E00DDE54D /* BMI Index Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Index Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74FE41441D2D6D4E00DDE54D /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74FE41471D2D6D4E00DDE54D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74FE41491D2D6D4E00DDE54D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74FE414C1D2D6D4E00DDE54D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		74FE41451D2D6D4E00DDE54D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74FE41441D2D6D4E00DDE54D /* BMI Index Calculator.app */,
+				74FE41441D2D6D4E00DDE54D /* BMI Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74FE41431D2D6D4E00DDE54D /* BMI Index Calculator */ = {
+		74FE41431D2D6D4E00DDE54D /* BMI Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74FE41561D2D6D4E00DDE54D /* Build configuration list for PBXNativeTarget "BMI Index Calculator" */;
+			buildConfigurationList = 74FE41561D2D6D4E00DDE54D /* Build configuration list for PBXNativeTarget "BMI Calculator" */;
 			buildPhases = (
 				74FE41401D2D6D4E00DDE54D /* Sources */,
 				74FE41411D2D6D4E00DDE54D /* Frameworks */,
@@ -90,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = "BMI Index Calculator";
+			name = "BMI Calculator";
 			productName = "BMI Index Calculator";
-			productReference = 74FE41441D2D6D4E00DDE54D /* BMI Index Calculator.app */;
+			productReference = 74FE41441D2D6D4E00DDE54D /* BMI Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 74FE413F1D2D6D4E00DDE54D /* Build configuration list for PBXProject "BMI Index Calculator" */;
+			buildConfigurationList = 74FE413F1D2D6D4E00DDE54D /* Build configuration list for PBXProject "BMI Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74FE41431D2D6D4E00DDE54D /* BMI Index Calculator */,
+				74FE41431D2D6D4E00DDE54D /* BMI Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +268,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.nurzhan.BMI-Index-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BMI Calculator";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -283,7 +283,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.nurzhan.BMI-Index-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BMI Calculator";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -291,7 +291,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74FE413F1D2D6D4E00DDE54D /* Build configuration list for PBXProject "BMI Index Calculator" */ = {
+		74FE413F1D2D6D4E00DDE54D /* Build configuration list for PBXProject "BMI Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74FE41541D2D6D4E00DDE54D /* Debug */,
@@ -300,7 +300,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74FE41561D2D6D4E00DDE54D /* Build configuration list for PBXNativeTarget "BMI Index Calculator" */ = {
+		74FE41561D2D6D4E00DDE54D /* Build configuration list for PBXNativeTarget "BMI Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74FE41571D2D6D4E00DDE54D /* Debug */,

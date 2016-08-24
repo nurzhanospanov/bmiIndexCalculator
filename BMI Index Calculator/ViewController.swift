@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     
     
     
+    @IBOutlet weak var calculateButton: UIButton!
+
+    
+    @IBOutlet weak var yourBmiLabel: UILabel!
+    
+    @IBOutlet weak var youHaveLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +37,17 @@ class ViewController: UIViewController {
         self.bmiIndexLabel.text = ""
         self.categoryLabel.text = ""
         
-        // Do any additional setup after loading the view, typically from a nib.
+        calculateButton.layer.cornerRadius = 5
+        calculateButton.layer.borderWidth = 1
+        calculateButton.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        self.hideKeyboard()
+        
+        self.youHaveLabel.hidden = true
+        self.yourBmiLabel.hidden = true
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    //@IBAction func calculateButtonPressed(sender: AnyObject) {
-    
-    
-    @IBOutlet weak var calculateButton: UIButton!
     
     
     @IBAction func calculateButtonPressed(sender: AnyObject) {
@@ -59,6 +64,7 @@ class ViewController: UIViewController {
                 
                 presentViewController(alert, animated: true, completion:nil)
             }
+            
             bmiIndexLabel.text = ""
             
             return
@@ -120,9 +126,31 @@ class ViewController: UIViewController {
             self.bmiIndexLabel.textColor = UIColor.init(red: 251.0/255, green: 114.0/255, blue: 93.0/255, alpha: 1.0)
             
         }
+            self.weightTextField.resignFirstResponder()
+            self.yourBmiLabel.hidden = false
+            self.youHaveLabel.hidden = false
         
     }
     
+}
+
+extension UIViewController {
+    
+    //hiding keyboard whenever there is touch outside
+    
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
 }
 
 
